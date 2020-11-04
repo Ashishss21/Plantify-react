@@ -20,33 +20,19 @@ class MainComponent extends Component {
 
     constructor(props) {
         super(props);
-
+        this.cartHandler = this.cartHandler.bind(this)
         this.state = {
             details: DETAILS,
             plants: PLANTS,
             home: HOMEFILE,
-            cart: []
         }
-        this.addInCart = this.addInCart.bind(this)
-        this.removeFromCart = this.removeFromCart.bind(this)
     }
 
-    addInCart(product) {
-        let newCart = [...this.state.cart]
-        newCart = newCart.concat(product)
-        this.setState({ cart: newCart }, () => {
-            console.log("Add", this.state.cart)
-        })
-    }
-
-    removeFromCart(product) {
-        let newCart = [...this.state.cart]
-        let newArr = newCart.filter(e => {
-            if (e.id != product.id) return e
-        })
-        this.setState({ cart: newArr }, () => {
-            console.log("Remove", this.state.cart)
-        })
+    cartHandler(product) {
+        let index = this.state.details.indexOf(product)
+        let newDetails = [...this.state.details]
+        newDetails[index].in_cart = !newDetails[index].in_cart
+        this.setState({ details: newDetails })
     }
 
     onDishSelect(productId) {
@@ -71,13 +57,13 @@ class MainComponent extends Component {
                 <Header />
                 <Switch>
                     <Route path="/home" component={() => <Home home={this.state.home} />} />
-                    <Route path="/cart" component={()=> <Cart cart={this.state.cart} /> } />
+                    <Route path="/cart" component={() => <Cart details={this.state.details} cartHandler={this.cartHandler} />} />
                     <Route exact path="/contactus" component={Contact} />
                     <Route exact path="/essentials" component={Essentials} />
                     <Route exact path="/card" component={Card} />
                     <Route exact path="/upi" component={UPI} />
                     <Route exact path="/care" component={() => <Care plant={this.state.plants} />} />
-                    <Route exact path="/menu" component={() => <Menu detail={this.state.details} cart={this.state.cart} removeFromCart={this.removeFromCart} addInCart={this.addInCart} />} />
+                    <Route exact path="/menu" component={() => <Menu detail={this.state.details} cart={this.state.cart} cartHandler={this.cartHandler} />} />
                     <Route exact path="/menu/:productID" component={ProductWithID} />
                     <Route exact path="/cod" component={Cash} />
                     <Redirect to="/home" />
