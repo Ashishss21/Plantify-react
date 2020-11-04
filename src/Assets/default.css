@@ -1,0 +1,79 @@
+.footer{
+    color: #fff;
+    background-color: #404040;
+    margin-top: 30px;
+}
+
+.list-unstyled{
+    margin-top: 15px;
+    padding: 0;
+}
+
+.col-4, .col-7
+{
+    margin-top: 45px;
+}
+
+.display, .display2, .display1{
+    width: 25rem;
+    align-items: center;
+}
+
+.main{
+    width: 80rem;
+}
+
+#self{
+    background-image: url(/img/dry.jpg);
+}
+
+.heading{
+    text-align: center;
+}
+
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background-color: #9575CD ;
+    color:#404040;
+}
+
+#contact{
+    padding-top: 10px;
+}
+
+.sign{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+*{
+    font-family: cursive;
+}
+.image
+{
+    height: 250px;
+    width: 350px;
+}
+.head{
+    padding-left:20px;
+}
+
+#btn-secondary{
+    margin-left: 20px;
+}
+
+.heading{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+#select{
+    margin-top: 15px;
+}
+#row{
+    margin-top: 10px;
+}
+#column{
+    display: flex;
+}

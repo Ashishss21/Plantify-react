@@ -1,0 +1,55 @@
+export const HOMEFILE=[
+    {
+        id: 0,
+        name: 'Areca Palm',
+        name1: 'Areca Palm',
+        image1: '/img/pic1.jpg',
+        image2: '/img/pic2.jpg',
+        image3: '/img/pic3.jpg',
+        image4: '/img/pic4.jpg',
+        category: 'mains',
+        price: '$10',
+        featured: true,
+        description: 'Areca palm plants help in absorbing indoor air pollutants like acetone, xylene,and toluene which emits from petroleum products and paints and wooden furniture,absorb harmful pollutants from indoor air and provide fresh air thus helps in minimizing upper respiratory tract diseases causes mainly because of toluene',
+        description1: 'Areca palm plants help in absorbing indoor air pollutants like acetone'
+    },
+    {
+        id: 1,
+        name: 'Money Plant',
+        name1: 'Money Plant',
+        image1: '/img/pic1.jpg',
+        image2: '/img/pic2.jpg',
+        image3: '/img/pic3.jpg',
+        image4: '/img/pic4.jpg',
+        price: '$10',
+        featured: false,
+        description: 'It energizes the home by filtering air and increasing oxygen inflow.Feng Shui experts recommend keeping one plant near each computer, television, or WiFi router.Placing a money plant in front of a sharp corner or angle reduces anxiety and stress.It also helps avoid arguments and sleep disorders.',
+        description1: 'It energizes the home by filtering air and increasing oxygen inflow.'
+    },
+    {
+        id: 2,
+        name: 'English Ivy',
+        name1: 'English Ivy',
+        image1: '/img/pic1.jpg',
+        image2: '/img/pic2.jpg',
+        image3: '/img/pic3.jpg',
+        image4: '/img/pic4.jpg',
+        price: '$10',
+        featured: false,
+        description: 'English Ivy is extremely popular in outdoor landscaping. English ivies are one of the top 10 air-purifying plants,according to the National Aeronautics and Space Administration (NASA). English ivies can remove toxins like: •	benzene •	formaldehyde  •	xylene  • toulene These toxins can cause sick building syndrome. Sick building syndrome is when people feel ill when spending time in a particular building or room.One study also found that English ivies could reduce particles of fecal matter and mold. Researchers found that the amount of fecal matter dropped by more than 94 percent in 12 hours. Mold went down by 78.',
+        description1: 'English Ivy is extremely popular in outdoor landscaping.'
+    },
+    {
+        id: 3,
+        name: 'Spider Plant',
+        name1: 'Spider Plant',
+        image1: '/img/pic1.jpg',
+        image2: '/img/pic2.jpg',
+        image3: '/img/pic3.jpg',
+        image4: '/img/pic4.jpg',
+        price: '$10',
+        featured: false,
+        description: 'One of the easiest indoor plants to maintain,the Spider Plant produces oxygen whilst purifying the air in your home and office by absorbing carbon monoxide, formaldehyde and xylene. Additionally, Spider Plants are non-toxic and are in fact edible, making them safe for pets and young children. When placed in office and home spaces Spider Plants can assist in <b>fostering happy vibes</b>, increasing productivity, decreasing stress and enriching overall well-being.',
+        description1: 'One of the easiest indoor plants to maintain',
+    }
+]
