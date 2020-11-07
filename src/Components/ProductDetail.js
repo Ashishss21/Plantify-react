@@ -50,6 +50,9 @@ const RenderComments = ({ detail }) => {
                 <Row className="w-100">
                     <Col md="fluid"><br/>--{detail.description}</Col>
                 </Row><br/>
+                <br/>
+                <h2>Price:-</h2>
+                <h3>{detail.price}</h3>
 
                 <select className="browser-default custom-select" id="select">
                     <option>Pot Size</option>
@@ -78,7 +81,8 @@ const RenderComments = ({ detail }) => {
                         <button type="button" className="btn btn-secondary" id="btn-secondary">Terracots</button>
                     </div>
                 </Row>
-
+                
+                
                 <Payment />
             </Row>
             <br />
