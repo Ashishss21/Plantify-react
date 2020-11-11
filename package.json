@@ -9,6 +9,7 @@
     "font-awesome": "^4.7.0",
     "mdbreact": "^4.27.0",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^16.13.1",
     "react-parallax": "^3.0.3",
     "react-redux": "^7.2.1",
